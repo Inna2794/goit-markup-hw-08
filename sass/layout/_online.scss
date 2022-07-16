@@ -1,0 +1,61 @@
+.online-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.online-input {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 1736px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 15px;
+}
+
+.online {
+  margin-left: 109px;
+  margin-left: auto;
+}
+
+.online-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+  & {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    @extend %align-list;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  & {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 8px;
+  }
+}
+
+.online-form {
+  display: flex;
+}
+
+.online-soc-icon {
+  margin-left: 10px;
+}

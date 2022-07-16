@@ -1,0 +1,27 @@
+:root {
+  --header-color: #212121;
+  --main-title-color: #ffffff;
+  --btn-color: #ffffff;
+  --second-title-color: #212121;
+  --accent-color: #2196f3;
+  --accent-dark-color: #1f8be3;
+  --color-dark: #2f303a;
+  --color-grey: rgba(255, 255, 255, 0.6);
+  --color-red: red;
+}
+
+$--second-title-color: #212121;
+
+.color-black {
+  color: var(--color-dark);
+}
+.color-white {
+  color: #ffffff;
+  display: block;
+}
+.color-blue {
+  color: var(--accent-color);
+}
+.color-grey {
+  color: var(--color-grey);
+}

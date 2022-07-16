@@ -1,0 +1,39 @@
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .list {
+    display: flex;
+  }
+}
+
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__title {
+  @include font();
+  text-align: center;
+  color: #212121;
+  & {
+    margin-bottom: 50px;
+  }
+}
+
+.about__item {
+  position: relative;
+}
+.about__text {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.14;
+  padding: 27px 0;
+  text-transform: uppercase;
+
+  text-align: center;
+}
