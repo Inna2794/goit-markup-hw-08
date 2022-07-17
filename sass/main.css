@@ -58,6 +58,9 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -96,6 +99,12 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -251,11 +260,10 @@ body {
   top: 0;
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
-  font-weight: 400;
-  line-height: 1.55;
-  padding-left: 24px;
-  padding-right: 24px;
+  font-weight: 700;
   font-size: 18px;
+  line-height: 2;
+  padding-right: 24px;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -276,8 +284,8 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 46px;
+  padding-bottom: 60px;
 }
 
 .hero-first {
@@ -367,7 +375,12 @@ body {
 }
 
 .hero-item {
-  flex-basis: calc((100% - 90px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .hero-text {
@@ -524,7 +537,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
 }
 
 .team__icon {
