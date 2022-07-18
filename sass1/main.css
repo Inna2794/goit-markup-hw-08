@@ -852,6 +852,7 @@ body {
 .footer-bg {
   padding: 60px 0;
   background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
   width: 100%;
 }
 
