@@ -13,55 +13,84 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./sass1/main.css">
     <title>WebStudio</title>
 </head>
 
 <body class="m-0">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <a class="logo link logo" href="URL"><span class="color-blue">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="navigation__list list">
-                    <li class="navigation__item">
-                        <a href="" class=" navigation__link  navigation__link--current link">Студия</a>
+            <button type="button" class="header__button" aria-expanded="false"
+                aria-label="Переключатель мобильного меню" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="header__icon--close" href="./images/sprite.svg#icon-close_40px"></use>
+                    <use class="header__icon--menu" href="./images/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu" data-menu>
+
+                <nav class="navigation">
+                    <ul class="navigation__list list">
+                        <li class="navigation__item">
+                            <a href="" class=" navigation__link  navigation__link--current link">Студия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./portfolio.html" class="navigation__link  link">Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="" class="navigation__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <a href="info@devstudio.com" class="contact__link email link">
+                            <svg class="contact__icon" width="16" height="12">
+                                <use href="./images/symbol-defs55.svg#icon-email"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+
                     </li>
-                    <li class="navigation__item">
-                        <a href="./portfolio.html" class="navigation__link  link">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link link">Контакты</a>
+                    <li class="contact__item">
+                        <a href="tel:+380961111111" class="contact__link phone link">
+                            <svg class="contact__icon" width="10" height="16">
+                                <use href="./images/symbol-defs55.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav> -->
-    <!-- <ul class="contact__list list">
-                <li class="contact__item">
-                    <a href="info@devstudio.com" class="contact__link email link">
-                        <svg class="contact__icon" width="16" height="12">
-                            <use href="./images/symbol-defs55.svg#icon-email"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
 
-                </li>
-                <li class="contact__item">
-                    <a href="tel:+380961111111" class="contact__link phone link">
-                        <svg class="contact__icon" width="10" height="16">
-                            <use href="./images/symbol-defs55.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="header-social__list">
+                    <li class="header-social__item">
+                        <a href="" class="header-social__link">Instagram</a>
+                    </li>
+                    <li class="header-social__item">
+                        <div class="header-social__border"></div>
+                        <a href="" class="header-social__link">Twitter</a>
+                    </li>
+                    <li class="header-social__item">
+                        <div class="header-social__border"></div>
+                        <a href="" class="header-social__link">Facebook</a>
+                    </li>
+                    <li class="header-social__item">
+                        <div class="header-social__border"></div>
+                        <a href="" class="header-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </header>
     <main>
-        <!-- <section class="hero bg-dark">
+        <section class="hero bg-dark">
             <div class="container">
                 <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
         <section class="section">
             <div class="container">
                 <ul class="section-list list">
@@ -143,7 +172,7 @@
                 </ul>
             </div>
         </section> -->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <div class="our-team">
                     <h2 class="team__title">Наша команда</h2>
@@ -302,9 +331,9 @@
                     </ul>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="customers">
+        <section class="customers">
             <div class="container">
                 <h2 class="customers__title">Постоянные клиенты</h2>
                 <ul class="customers__list list">
@@ -353,7 +382,7 @@
 
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer class="footer-bg">
         <div class="container">
@@ -480,4 +509,5 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
