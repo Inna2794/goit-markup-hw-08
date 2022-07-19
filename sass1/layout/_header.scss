@@ -3,8 +3,21 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+  position: relative;
   .container {
     display: flex;
     @extend %align-list;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
   }
 }

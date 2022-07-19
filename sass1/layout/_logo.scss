@@ -6,7 +6,15 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-dark);
+  text-align: center;
+  flex-shrink: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    text-align: left;
+  }
 }
+
 .logo {
   margin-right: 93px;
 }
