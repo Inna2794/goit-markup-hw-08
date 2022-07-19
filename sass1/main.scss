@@ -3,10 +3,9 @@
 @import "./utils/hidden";
 @import "./utils/placeholders";
 @import "./utils/mixins";
+@import "./utils/.no-scroll";
 @import "./components/container";
 @import "./layout/header";
-
-
 
 @import "./layout/logo";
 @import "./components/btn";

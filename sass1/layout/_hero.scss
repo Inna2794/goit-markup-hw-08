@@ -2,12 +2,12 @@
   display: flex;
 }
 
-.hero-item {
-  position: relative;
-  & {
-    margin: 15px;
-  }
-}
+// .hero-item {
+//   position: relative;
+//   & {
+//     margin: 15px;
+//   }
+// }
 
 .hero-top-text {
   position: absolute;
@@ -39,7 +39,9 @@
 }
 
 .hero-list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio {
@@ -142,7 +144,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images1/mobile/logo.webp);
+    url(../images/mobile/logo.webp);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -168,7 +170,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images1/tablet/hero@2x.webp);
+        url(../images/tablet/hero@2x.webp);
     }
   }
 
@@ -211,13 +213,14 @@
 
 .hero-item {
   width: 100%;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
+
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 60px) / 3);
   }
-  // flex-basis: calc((100% - 90px) / 3);
 }
 
 .hero-text {

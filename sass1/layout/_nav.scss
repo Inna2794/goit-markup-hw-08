@@ -1,12 +1,29 @@
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: -15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio__item:not(:last-child) {
+.portfolio__item {
+  margin-top: 15px;
   margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
+
+// .portfolio__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .portfolio__button {
   font-weight: 500;
