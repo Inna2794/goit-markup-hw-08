@@ -1,16 +1,16 @@
 .about {
-  padding-top: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
   .list {
     display: flex;
   }
 }
-
 .about__item:not(:last-child) {
   margin-right: 30px;
 }
-
-.about__title {
+​.about__title {
   @include font();
   text-align: center;
   color: #212121;
@@ -18,8 +18,7 @@
     margin-bottom: 50px;
   }
 }
-
-.about__item {
+​ .about__item {
   position: relative;
 }
 .about__text {
@@ -34,6 +33,5 @@
   line-height: 1.14;
   padding: 27px 0;
   text-transform: uppercase;
-
   text-align: center;
 }
